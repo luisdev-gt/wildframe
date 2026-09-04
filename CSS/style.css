@@ -1,4 +1,4 @@
-/* WildFrame — naturaleza, silencio y contraste */
+/* WildFrame GT — naturaleza, silencio y contraste */
 :root {
 	--ink: #0a100d;
 	--forest: #101b16;
@@ -19,7 +19,8 @@ a:hover { color: var(--gold); }
 
 header { position: absolute; z-index: 20; top: 0; left: 0; width: 100%; padding-top: 1.25rem; }
 nav { display: flex; align-items: center; justify-content: space-between; width: min(calc(100% - 3rem), var(--width)); min-height: 75px; margin: 0 auto; padding-bottom: .9rem; border-bottom: 1px solid var(--line); }
-.logo { font: 500 clamp(1.2rem, 2vw, 1.55rem)/1 Georgia, serif; letter-spacing: .16em; text-transform: uppercase; }
+.logo { display: inline-flex; align-items: center; gap: .7rem; font: 500 clamp(1.2rem, 2vw, 1.55rem)/1 Georgia, serif; letter-spacing: .16em; text-transform: uppercase; }
+.logo img { width: 42px; height: 42px; object-fit: cover; }
 .nav-links { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2.5rem); }
 .nav-links a { color: var(--soft); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; }
 .menu-toggle { display: none; align-items: center; justify-content: center; flex-direction: column; gap: .28rem; width: 46px; height: 46px; padding: 0; border: 1px solid var(--line); border-radius: 999px; background: rgba(10, 16, 13, .35); color: var(--cream); cursor: pointer; }
@@ -62,6 +63,8 @@ footer p { margin-bottom: 0; font-size: .75rem; text-align: center; }
 	nav { position: relative; flex-wrap: wrap; row-gap: .9rem; min-height: 72px; padding-bottom: 1rem; }
 	.menu-toggle { display: inline-flex; }
 	.logo, .nav-links { flex-basis: 100%; }
+	.logo { justify-content: center; }
+	.logo img { width: 44px; height: 44px; }
 	.nav-links { justify-content: space-between; gap: .75rem; }
 	.nav-links a { font-size: .72rem; }
 	.hero { min-height: 85vh; }
