@@ -59,9 +59,10 @@ footer p { margin-bottom: 0; font-size: .75rem; text-align: center; }
 @media (max-width: 700px) {
 	nav, main > section, footer > p { width: min(calc(100% - 2rem), var(--width)); }
 	header { padding-top: 1rem; }
-	nav { position: relative; min-height: 72px; }
+	nav { position: relative; flex-wrap: wrap; row-gap: .9rem; min-height: 72px; padding-bottom: 1rem; }
 	.menu-toggle { display: inline-flex; }
-	.nav-links { flex: 1 1 100%; justify-content: space-between; gap: .75rem; }
+	.logo, .nav-links { flex-basis: 100%; }
+	.nav-links { justify-content: space-between; gap: .75rem; }
 	.nav-links a { font-size: .72rem; }
 	.hero { min-height: 85vh; }
 	.gallery { grid-template-columns: minmax(0, 1fr); }
